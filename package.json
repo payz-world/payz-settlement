@@ -1,0 +1,22 @@
+{
+  "name": "payz-settlement",
+  "version": "0.0.0",
+  "license": "Apache-2.0",
+  "type": "module",
+  "exports": {
+    "./provider": "./src/lib/ethereum-settlement.ts",
+    "./verification": "./src/lib/ethereum-settlement.ts",
+    "./wallet": "./src/lib/platform-wallet.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "payz-core": "workspace:*",
+    "viem": "^2.57.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.3",
+    "typescript": "~5.9.3"
+  }
+}
